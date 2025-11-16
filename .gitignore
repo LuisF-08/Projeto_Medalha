@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Data files (manter estrutura, mas não os dados grandes)
+# Descomente se não quiser versionar os dados
+# 01-bronze-raw/*.csv
+# 01-bronze-raw/*.json
+# 02-silver-validated/*
+# 03-gold-enriched/*
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Arquivos de configuração local
+config.local.py
+settings.local.py
+
