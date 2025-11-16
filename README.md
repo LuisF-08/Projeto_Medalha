@@ -20,11 +20,13 @@ P Arquiteturas Medalhão/
 │   └── products.json       # 80.000 registros de produtos
 │
 ├── 02-silver-validated/    # Camada Silver - Dados limpos
+│   ├── products.parquet         # 70.000 registros de usuários transformados em .paquet     
+│   ├── cep_info.parquet           # 450 cep validados se são reais ou falsos
+│   └── users.parquet     # 80.000 registros de produtos transformados em .parquet
 │
 ├── 03-gold-enriched/       # Camada Gold - Dados enriquecidos
 │
-├── gerar_dados.py          # Script para gerar dados de usuários
-├── gerar_produtos.py       # Script para gerar dados de produtos
+├── normalize_data.py       # Script para normalizar os dados para o silver
 ├── get_data.py             # Script para consultar API ViaCEP
 ├── arquitetura_medalhao.png # Diagrama da arquitetura
 │
@@ -174,7 +176,8 @@ O projeto utiliza 870 CEPs reais do Brasil, cobrindo:
 37 DDDs brasileiros incluindo todas as capitais e principais regiões.
 
 ## 🤝 Contribuindo
-
+Meu tutor nesse projeto foi o canal Data Engineer Help
+que demopnstrou passo a passo do projeto
 Este é um projeto educacional. Sinta-se à vontade para:
 - Fazer fork do projeto
 - Criar branches para suas melhorias
@@ -186,7 +189,7 @@ Este projeto é de uso educacional e está disponível para fins de aprendizado.
 
 ## 👨‍💻 Autor
 
-Desenvolvido como parte do curso de Engenharia de Dados.
+Luís Filipe Moreira Novais
 
 ---
 
