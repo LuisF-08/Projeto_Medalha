@@ -20,6 +20,9 @@ P Arquiteturas Medalhão/
 │   └── products.json       # 80.000 registros de produtos
 │
 ├── 02-silver-validated/    # Camada Silver - Dados limpos
+|   ├── cep_info.parquet        
+|   ├── products.parquet
+│   └── users.parquet     
 │
 ├── 03-gold-enriched/       # Camada Gold - Dados enriquecidos
 │
@@ -27,6 +30,8 @@ P Arquiteturas Medalhão/
 ├── gerar_produtos.py       # Script para gerar dados de produtos
 ├── get_data.py             # Script para consultar API ViaCEP
 ├── arquitetura_medalhao.png # Diagrama da arquitetura
+├── db.py # CRUD para o banco de dados
+├── docker-compose.yml # Infraestrutura do PostGreSQL Em um container na Docker
 │
 ├── requirements.txt        # Dependências do projeto
 ├── README.md              # Este arquivo
